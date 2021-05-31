@@ -1,0 +1,29 @@
+{
+  "name": "test-unit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test-ci": "JEST_JUNIT_OUTPUT_DIR=junit ./node_modules/.bin/jest --ci --testResultsProcessor=jest-junit",
+    "html": "node-w3c-validator -f lint -evH -i site/**/*.html",
+    "code": "editorconfig-checker",
+		"eslint": "eslint site/**/*.js"
+  },
+  "author": "Gleb Mikheev <mikheev@betaagency.ru> (http://betaagency.ru)",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "26.0.7",
+    "editorconfig-checker": "^4.0.2",
+    "eslint": "^7.27.0",
+    "i": "^0.3.6",
+    "jest": "26.1.0",
+    "jest-dev-server": "4.4.0",
+    "jest-image-snapshot": "4.1.0",
+    "jest-junit": "11.1.0",
+    "node-static": "0.7.11",
+    "node-w3c-validator": "^2.0.1",
+    "npm": "^7.15.0",
+    "puppeteer": "5.2.1"
+  }
+}
